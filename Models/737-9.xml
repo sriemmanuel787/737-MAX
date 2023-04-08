@@ -12,6 +12,24 @@
          livery_update.stop();
         </unload>
     </nasal>
+	
+	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+		<object-name>overlay.doorFL</object-name>
+		<object-name>overlay.doorFR</object-name>
+		<object-name>overlay.doorAL</object-name>
+		<object-name>overlay.doorAR</object-name>
+		<object-name>overlay.cdoor.aftO</object-name>
+		<object-name>overlay.cdoor.fwd</object-name>
+		<object-name>overlay.engine2</object-name>
+		<object-name>overlay.engine1</object-name>
+		<object-name>overlay.engine3</object-name>
+		<object-name>overlay.fuse1</object-name>
+		<object-name>Plane</object-name>
+	<!--	<object-name>static-ports</object-name> -->
+		<object-name>windshield</object-name>
+	</effect>
+	
     <animation>
         <type>material</type>
         <object-name>aileron.L1</object-name>

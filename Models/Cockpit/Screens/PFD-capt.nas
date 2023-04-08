@@ -280,7 +280,9 @@ var canvas_PFDC = {
             else
                 me["spd-100"].setTranslation(0, math.mod(ias-math.mod(ias, 100), 1000) * 0.343);
         }
+		if (getprop("velocities/mach") != nil) {
         me["mach"].setText(sprintf(".%.03d", getprop("velocities/mach")));
+		}
 
         if (getprop("it-autoflight/input/kts-mach"))
             me["spd-ap"].setText(sprintf(".%.03d", getprop("it-autoflight/input/spd-mach")));
@@ -290,8 +292,9 @@ var canvas_PFDC = {
         
         
         # AOA Indicator
+		if (vsi != nil) {
         me["aoa-needle"].setRotation(vsi*D2R);
-        
+        }
         if(vSpeed*60 > 500) {
             me["vs-pos"].show().setText(sprintf("%i", vSpeed*60 - math.mod(vSpeed*60, 50)));
             me["vs-neg"].hide();
