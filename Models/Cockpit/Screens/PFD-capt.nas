@@ -293,7 +293,7 @@ var canvas_PFDC = {
         
         # AOA Indicator
 		if (vsi != nil) {
-        me["aoa-needle"].setRotation(vsi*D2R);
+            me["aoa-needle"].setRotation(vsi*D2R);
         }
         if(vSpeed*60 > 500) {
             me["vs-pos"].show().setText(sprintf("%i", vSpeed*60 - math.mod(vSpeed*60, 50)));
