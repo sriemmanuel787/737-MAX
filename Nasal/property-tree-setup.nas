@@ -5,7 +5,7 @@ var Consumables = {
     Fuel:{
         right:  props.globals.getNode("consumables/fuel/tank[0]/level-kg"),
         left:   props.globals.getNode("consumables/fuel/tank[1]/level-kg"),
-        center: props.globals.getNode("consumables/fuel/tank[2]/level-kg"),
+        center: props.globals.getNode("consumables/fuel/tank[2]/level-kg")
     }
 };
 
@@ -18,7 +18,7 @@ var Engines = {
 	n2Actual:   [props.globals.getNode("engines/engine[0]/n2"), props.globals.getNode("engines/engine[1]/n2")],
     startValve: [props.globals.getNode("controls/engines/engine[0]/starter"), props.globals.getNode("controls/engines/engine[1]/starter")],
 	oilPsi:     [props.globals.getNode("engines/engine[0]/oil-pressure-psi"), props.globals.getNode("engines/engine[1]/oil-pressure-psi")],
-	state:      [props.globals.getNode("sim/failure-manager/engines/engine[0]/serviceable"), props.globals.getNode("sim/failure-manager/engines/engine[1]/serviceable")],
+	serviceable:      [props.globals.getNode("sim/failure-manager/engines/engine[0]/serviceable"), props.globals.getNode("sim/failure-manager/engines/engine[1]/serviceable")]
 };
 
 var Controls = {
@@ -27,14 +27,14 @@ var Controls = {
 		flapsPos:   props.globals.getNode("surface-positions/flap-pos-norm"),
 		spoilerPos: props.globals.getNode("surface-positions/spoilers-pos-norm"),
 		rudderPos:  props.globals.getNode("surface-positions/rudder-pos-norm"),
-		elevPos:	props.globals.getNode("surface-positions/elevator-pos-norm"),
+		elevPos:	props.globals.getNode("surface-positions/elevator-pos-norm")
     },
 
 	Gear: {
 		compression: [props.globals.getNode("gear/gear[0]/compression-ft"), props.globals.getNode("gear/gear[1]/compression-ft"), props.globals.getNode("gear/gear[2]/compression-ft")],
 		position:    [props.globals.getNode("gear/gear[0]/position-norm"), props.globals.getNode("gear/gear[1]/position-norm"), props.globals.getNode("gear/gear[2]/position-norm")],
 		rollspd:     [props.globals.getNode("gear/gear[0]/rollspeed-ms"), props.globals.getNode("gear/gear[1]/rollspeed-ms"), props.globals.getNode("gear/gear[2]/rollspeed-ms")],
-		wow:         [props.globals.getNode("gear/gear[0]/wow"), props.globals.getNode("gear/gear[1]/wow"), props.globals.getNode("gear/gear[2]/wow")],
+		wow:         [props.globals.getNode("gear/gear[0]/wow"), props.globals.getNode("gear/gear[1]/wow"), props.globals.getNode("gear/gear[2]/wow")]
 	}
 };
 
@@ -83,10 +83,10 @@ var Sim = {
 
 var Radio = {
     nav: [props.globals.getNode("instrumentation/nav[0]/frequencies/selected-mhz"), props.globals.getNode("instrumentation/nav[1]/frequencies/selected-mhz")]
-}
+};
 
 var Info = {
     icao:         props.globals.getNode("sim/model/airline-code"),
     registration: props.globals.getNode("sim/model/registration"),
     selcal:       props.globals.getNode("sim/model/selcal")
-}
+};

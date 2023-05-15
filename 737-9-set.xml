@@ -308,7 +308,7 @@
         </weight>
     </payload>
 
-    <nasal>
+    <nasal n="0">
         <pts>
             <file>Aircraft/737-MAX/Nasal/property-tree-setup.nas</file>
         </pts>
