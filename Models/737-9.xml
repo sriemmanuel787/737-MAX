@@ -106,23 +106,9 @@
 
     <animation>
         <type>material</type>
-        <object-name>n1.cone</object-name>
         <object-name>n1.cowl</object-name>
-        <object-name>n1.exhaust</object-name>
-        <object-name>n1.fan</object-name>
-        <object-name>n1.interior</object-name>
-        <object-name>n1.opening</object-name>
-        <object-name>n1.panel</object-name>
-        <object-name>n1.pylon</object-name>
         <object-name>n1.reverser</object-name>
-        <object-name>n2.cone</object-name>
         <object-name>n2.cowl</object-name>
-        <object-name>n2.exhaust</object-name>
-        <object-name>n2.fan</object-name>
-        <object-name>n2.interior</object-name>
-        <object-name>n2.opening</object-name>
-        <object-name>n2.panel</object-name>
-        <object-name>n2.pylon</object-name>
         <object-name>n2.reverser</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>engine</texture-prop>
@@ -147,6 +133,15 @@
         <offsets>
             <x-m>-15.742701</x-m>
             <z-m>-3.15529</z-m>
+        </offsets>
+    </model>
+
+    <!-- Dirt Streaks -->
+     <model>
+        <path>Aircraft/737-MAX/Models/Effects/dirt-streak-nose.xml</path>
+        <offsets>
+            <x-m>-15.5429</x-m>
+            <z-m>-3.15105</z-m>
         </offsets>
     </model>
 

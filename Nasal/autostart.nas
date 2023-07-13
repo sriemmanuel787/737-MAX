@@ -92,18 +92,14 @@ var shutdown = func {
 };
 
 # listener to activate these functions accordingly
-setlistener("sim/model/start-idling", func(idle)
- {
- var run = idle.getBoolValue();
- if (run)
-  {
-  startup();
-  }
- else
-  {
-  shutdown();
-  }
- }, 0, 0);
+setlistener("sim/model/start-idling", func(idle) {
+	var run = idle.getBoolValue();
+	if (run) {
+		startup();
+	} else {
+		shutdown();
+	}
+}, 0, 0);
 
 var inair_started = 0;
 var inAirStart_check = func {

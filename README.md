@@ -10,7 +10,7 @@ A project to create the 737 MAX series for FlightGear, the free flight simulator
 - Marsdolphin - Systems
 - And others
 
-A big thanks to all FlightGear developers, especially those of the 737-800YV, 787, and MD-11. Your work has been crucial to the progress of this aircraft and FlightGear in general. Thanks for your efforts and dedication!
+A big thanks to all FlightGear developers, especially those of the 737-800YV, 787, A320, and MD-11. Your work has been crucial to the progress of this aircraft and FlightGear in general. Thanks for your efforts and dedication!
 
 ## Installation Instructions - Download
 - Download and unzip this folder in your aircraft folder. Make sure FlightGear is pointed to that folder; if not, you can tell it to do so in the Add-ons menu.

@@ -230,6 +230,18 @@
     <animation>
         <type>material</type>
         <object-name>screen.iesi</object-name>
+        <object-name>ap.annunciator.air-cond</object-name>
+        <object-name>ap.annunciator.anti-ice</object-name>
+        <object-name>ap.annunciator.apu</object-name>
+        <object-name>ap.annunciator.doors</object-name>
+        <object-name>ap.annunciator.elec</object-name>
+        <object-name>ap.annunciator.eng</object-name>
+        <object-name>ap.annunciator.flt-cont</object-name>
+        <object-name>ap.annunciator.fuel</object-name>
+        <object-name>ap.annunciator.hyd</object-name>
+        <object-name>ap.annunciator.irs</object-name>
+        <object-name>ap.annunciator.overhead</object-name>
+        <object-name>ap.annunciator.ovht-det</object-name>
         <object-name>ap.course1</object-name>
         <object-name>ap.spd</object-name>
         <object-name>ap.heading</object-name>
@@ -1062,6 +1074,145 @@
             </binding>
         </action>
     </animation>
+
+    <!-- Annunciator -->
+    <animation>
+        <type>pick</type>
+        <object-name>ap.cautionL</object-name>
+        <object-name>ap.cautionR</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property-name>instrumentation/weu/outputs/master-caution-lamp</property-name>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>ap.cautionL</object-name>
+        <object-name>ap.cautionR</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property-name>instrumentation/weu/outputs/master-caution-lamp</property-name>
+        </condition>
+    </animation>
+    <animation>
+        <type>pick</type>
+        <object-name>ap.warnL</object-name>
+        <object-name>ap.warnR</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>weu-fire-button</command>
+            </binding>
+        </action>
+    </animation>
+    <animation>
+        <type>material</type>
+        <object-name>ap.warnL</object-name>
+        <object-name>ap.warnR</object-name>
+        <emission>
+            <red>1</red>
+            <green>1</green>
+            <blue>1</blue>
+        </emission>
+        <condition>
+            <property-name>weu-fire-button</property-name>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.air-cond</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/air-cond-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.anti-ice</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/anti-ice-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.apu</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/apu-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.doors</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/doors-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.elec</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/elec-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.eng</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/eng-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.flt-cont</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/flt-cont-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.fuel</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/fuel-lamp</property>
+        </condition>
+    </animation><animation>
+        <type>select</type>
+        <object-name>ap.annunciator.hyd</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/hyd-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.irs</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/irs-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.overhead</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/ovhd-lamp</property>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>ap.annunciator.ovht-det</object-name>
+        <condition>
+            <property>instrumentation/weu/outputs/ohvt-lamp</property>
+        </condition>
+    </animation>
+
 
     <!-- Left Electronic Flight Instrument System -->
     <animation>

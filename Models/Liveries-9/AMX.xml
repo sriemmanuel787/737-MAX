@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+    <sim>
+        <model>
+            <livery>
+                <name type="string">Aeromexico</name>
+                <fuselage>Liveries-9/AMX.png</fuselage>
+                <engine>Liveries-engine/AMX.png</engine>
+            </livery>
+            <registration>XA-IMH</registration>
+            <airline-code>AMX</airline-code>
+            <selcal>AB-CD</selcal>
+        </model>
+    </sim>
+</PropertyList>
